@@ -53,9 +53,8 @@ export default class VaccineSlotFinder extends LightningElement {
         });
 
         // add column value for the row
-        centers.get(center.center_id)[
-          date
-        ] = `Available Capacity: ${available_capacity}
+        centers.get(center.center_id)[date] = 
+        `Available Capacity: ${available_capacity}
         Min Age: ${min_age_limit}`;
 
         centers.get(center.center_id).className =
